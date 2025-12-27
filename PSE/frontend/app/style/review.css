@@ -1,0 +1,56 @@
+.titles {
+    display: flex;
+    margin: 0px 20px 0px 20px;
+    gap: 10px;
+}
+
+.leftTitle, .rightTitle {
+    padding: 15px 0px 0px 0px;
+    border-radius: 10px;
+}
+
+.leftTitle {
+    flex: 3;
+    font-size: 40px;
+}
+
+.rightTitle {
+    flex: 2;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    gap: 10px;
+}
+
+.leftContainer, .rightContainer {
+    padding: 10px;
+    border-radius: 10px;
+    height: calc(100vh - 25vh);
+    overflow-y: auto;
+}
+
+.leftContainer {
+    flex: 3;
+    display: flex;
+    background-color: #22304C;
+    overflow: auto;
+}
+
+.rightContainer {
+    flex: 2;
+    background-color: #22304C;
+    overflow: auto;
+}
+
+.lineNumbers {
+    color: #8899A6;
+    text-align: right;
+    margin-right: 15px;
+}
+
+/* .code {
+
+} */

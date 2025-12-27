@@ -1,0 +1,242 @@
+.flexContainerHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0.5rem; /* top right bottom left */
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  border: 0px solid #ccc;
+  border-radius: 1.0rem;
+  width: calc(100% - 2rem);
+  /* max-width: 100%; */
+  box-sizing: border-box;
+}
+
+.flexContainerMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  border: 0px solid #ccc;
+  border-radius: 0.5rem;
+  margin: 1px;
+}
+
+.flexContainerDouble {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0rem 3.5rem 1.5rem 3.5rem;
+  padding: 0.75rem;
+  border: 0px solid #ccc;
+  border-radius: 1.0rem;
+  width: 100%;
+  /* max-width: 100%; */
+  box-sizing: border-box;
+  background-color: #4F5D69;
+}
+
+.flexContainerDoubleItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 0px solid #ccc;
+  border-radius: 1.0rem;
+  width: 100%;
+  /* max-width: 100%; */
+  box-sizing: border-box;
+  background-color: #192734;
+  cursor: pointer;
+}
+
+.flexContainerDoubleItemBase {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 0px solid #ccc;
+  border-radius: 1.0rem;
+  width: 100%;
+  /* max-width: 100%; */
+  box-sizing: border-box;
+  background-color: #192734;
+}
+
+.flexContainerDoubleItem:hover {
+  background-color: #253341;
+}
+
+.flexContainerReplacementItem {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 0px solid #ccc;
+  border-radius: 1.0rem;
+  width: 100%;
+  /* max-width: 100%; */
+  box-sizing: border-box;
+  background-color: #192734;
+}
+
+.flexContainerReplacement {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flexContainerFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border: 0px solid #ccc;
+  border-radius: 0.5rem;
+  margin: 0rem 2.5rem 0rem;
+  padding: 0rem 4rem 2rem;
+}
+
+.a {
+  text-decoration: none;
+  color: #1D9BF0;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #1D9BF0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #15202B;
+}
+
+/* home.module.css */
+.spinner {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.button18 {
+  align-items: center;
+  background-color: #1D9BF0;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button18:hover,
+.button18:focus {
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button18:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+
+.button1 {
+  align-items: center;
+  background-color: #1D9BF0;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 12px;  /* Decreased from 16px */
+  font-weight: 600;
+  justify-content: center;
+  line-height: 16px;  /* Adjusted for smaller font size */
+  max-width: 480px;
+  min-height: 30px;  /* Decreased from 40px */
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 10px;  /* Decreased from 20px */
+  padding-right: 10px;  /* Decreased from 20px */
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button1:hover,
+.button1:focus {
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button1:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button1:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}

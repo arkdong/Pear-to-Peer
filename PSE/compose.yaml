@@ -1,0 +1,51 @@
+services:
+  frontend:
+    environment:
+      - NODE_ENV=production
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    expose:
+      - 3000
+    networks:
+      - app-network
+    develop:
+      watch:
+        - path: frontend/package.json
+          action: rebuild
+        - action: sync
+          path: frontend/
+          target: /react-app
+          ignore:
+            - node_modules/
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend
+    volumes:
+      - ./data:/data
+      - ./data:/app/instance
+    expose:
+      - 5000
+    networks:
+      - app-network
+
+  nginx:
+    build:
+      context: ./server
+    container_name: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - app-network
+    depends_on:
+      - frontend
+      - backend
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,122 @@
+/* Container Styles */
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 100%;
+}
+
+/* Header Styles */
+.flexContainerHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 1.0rem;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  color: #FFFFFF;
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Back Button Styles */
+.back-button {
+  position: absolute;
+  left: 20px;
+  background-color: #1D9BF0;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #FFFFFF;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover,
+.back-button:focus {
+  background-color: #16437E;
+}
+
+.back-button:active {
+  background-color: #09223b;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+/* Main Container Styles */
+.flexContainerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Square Container Styles */
+.square-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+/* Top Row Styles */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Square Styles */
+.square {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  margin: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 1.0rem;
+  width: 300px; /* Increase width */
+  height: 150px; /* Increase height */
+  box-sizing: border-box;
+  background-color: #4F5D69;
+  color: #FFFFFF; /* Ensure text is readable */
+  font-size: 18px; /* Increase font size */
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.square:hover {
+  background-color: #1D9BF0;
+}
+
+.square.blue:hover {
+  background-color: #1D9BF0;
+}
+
+/* Header Title Styles */
+.header-title {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Header Styles */
+.flexContainerHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 1.0rem;
+  margin-bottom: 10px;
+  position: relative;
+}

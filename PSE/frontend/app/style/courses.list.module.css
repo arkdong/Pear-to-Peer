@@ -1,0 +1,118 @@
+.flexContainerHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 0px 0rem 2rem; /* top right bottom left */
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    border: 0px solid #ccc;
+    border-radius: 1.0rem;
+    width: calc(100% - 4rem);
+    /* max-width: 100%; */
+    box-sizing: border-box;
+  }
+
+.flexContainerCourseItem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 0px solid #ccc;
+    border-radius: 1.0rem;
+    width: 100%;
+    /* max-width: 100%; */
+    box-sizing: border-box;
+    background-color: #192734;
+    transition: background-color 0.3s;
+}
+
+.flexContainerCourseItem:hover {
+    background-color: #253341;
+}
+
+.flexContainerCourse {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    border: 0px solid #ccc;
+    border-radius: 1.0rem;
+    width: 100%;
+    max-width: 50%;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #4F5D69;
+    }
+
+.flexContainerMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid #ccc;
+    border-radius: 0.5rem;
+    margin: 1px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Overlay background */
+    z-index: 1000;
+  }
+
+.modalContent {
+    background: #192734;
+    padding: 2rem;
+    border-radius: 1.0rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.button {
+    background-color: #1D9BF0;
+    border: none;
+    color: #FFFFFF;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #22303C;
+}
+
+
+p {
+    color: #8899A6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #15202B;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: auto;
+}

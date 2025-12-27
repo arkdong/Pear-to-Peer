@@ -1,0 +1,160 @@
+/* Modulair CSS file used to customize the "create a review" page. */
+
+/* Titles displayed on the top of the page */
+.titles {
+    display: flex;
+    margin: 0px 20px 0px 20px;
+    gap: 10px;
+}
+
+.leftTitle, .middleTitle, .rightTitle {
+    padding: 15px 0px 0px 0px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.leftTitle {
+    flex: 3;
+}
+
+.middleTitle, .rightTitle {
+    flex: 2;
+}
+
+/* Containers that are used to divide the page into three seperate divisions */
+.container {
+    display: flex;
+    margin: 20px;
+    gap: 10px;
+}
+
+.leftContainer {
+    padding: 10px;
+    border-radius: 10px;
+    flex: 3;
+    display: flex;
+    background-color: #22304C;
+    overflow: auto;
+    height: calc(100vh - 25vh);
+    overflow-y: auto;
+}
+
+.lineNumbers {
+    color: #8899A6;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.middleContainer {
+    padding: 10px;
+    border-radius: 10px;
+    flex: 2;
+    background-color: #22304C;
+    overflow: auto;
+    height: calc(100vh - 25vh);
+    overflow-y: auto;
+}
+
+.rightContainer {
+    padding: 10px;
+    border-radius: 10px;
+    flex: 2;
+    background-color: #22304C;
+    overflow: auto;
+    height: calc(100vh - 25vh);
+    overflow-y: auto;
+}
+
+/* All form styling used to create a nice way to add comments
+   and submit a review*/
+.formStyle {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.formLabel {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.labelText {
+    flex: 2;
+}
+
+.labelField{
+    flex: 7;
+}
+
+.lineField {
+    width: 15%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.commentField {
+    width: 95%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.addButtonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.addButton {
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: #007BFF;
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.addButton:hover {
+    background-color: #0056b3;
+}
+
+.submitButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submitButton {
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: #007BFF;
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}
+
+
+/* CSS for a nice success, fail or error message */
+.feedbackMessage {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background: rgba(0,0,0,1);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+  }

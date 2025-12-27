@@ -1,0 +1,79 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    margin: 20px;
+    gap: 10px;
+}
+
+
+.statisticsContainer {
+    display: flex; /* Establishes this container as a flex container */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Aligns items vertically */
+    gap: 20px; /* Adds space between each statistic block */
+    width: 100%; /* Takes full width to center properly */
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.statistic {
+    text-align: center;
+}
+
+.number {
+    font-size: 2em; /* Adequate size for statistical numbers */
+    font-weight: bold; /* Make numbers bold */
+    color: #0056b3; /* More visible and thematic color */
+}
+
+.label {
+    font-size: 1em; /* Smaller text for the label */
+    font-weight: normal; /* Normal weight for the label */
+    text-transform: uppercase; /* Uppercase for the label */
+    color: white; /* Lighter color for less emphasis */
+}
+
+.number {
+    font-size: 2.5em; /* Larger font size for the number */
+    font-weight: bold; /* Makes the number bold */
+    margin-bottom: 0.5em; /* Adds space below the number */
+}
+
+.label {
+    font-size: 1em; /* Smaller font size for the label */
+    font-weight: normal; /* Normal font weight for the label */
+    text-transform: uppercase; /* Makes the label uppercase */
+    color: #666; /* Lighter color for the label */
+}
+
+.firstContainer, .thirdContainer, .fifthContainer {
+    background-color: #22304C;
+    padding: 10px 40px 20px 40px;
+    border-radius: 10px;
+    width: 40vw;
+}
+
+.secondContainer, .fourthContainer {
+    background-color: #22304C;
+    padding: 10px 40px 20px 40px;
+    border-radius: 10px;
+    align-self: flex-end;
+    width: 40vw;
+}
+
+/* .fifthContainer {
+    background-color: #22304C;
+    padding: 10px 40px 20px 40px;
+    border-radius: 10px;
+    width: 100vw;
+} */
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    letter-spacing: 1px;
+    text-align: center;
+}

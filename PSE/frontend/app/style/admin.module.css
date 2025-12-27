@@ -1,0 +1,142 @@
+/* adminPage.css */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* div {
+    margin-bottom: 40px;
+} */
+
+hr {
+    background-color: #192734;
+    color: #192734;
+}
+
+/* Table styles */
+table {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+table, th, td {
+    border: 1px solid #192734; /* Card border color */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    color: #FFFFFF; /* Primary Text */
+}
+
+th {
+    background-color: #192734; /* Card */
+}
+
+td {
+    background-color: #22303C; /* Hover Color */
+}
+
+/* Button styles */
+.button {
+    background-color: #1D9BF0; /* Button */
+    color: #FFFFFF; /* Primary Text */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5%;
+}
+
+.button:hover {
+    background-color: #16437E; /* Hover Color */
+}
+
+.button:focus {
+    outline: none;
+}
+
+hr {
+    width: calc(100% + 20px); /* Increase width beyond the container */
+    border: none;
+    border-top: 1px solid #8899A6; /* Secondary Text Color */
+}
+
+
+/* Form styles */
+form {
+    background-color: #192734; /* Card */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #8899A6; /* Secondary Text */
+}
+
+input[type="text"], select, input[type="file"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #FFFFFF; /* Primary Text */
+    border-radius: 5px;
+    background-color: #22303C; /* Hover Color */
+    color: #FFFFFF; /* Primary Text */
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+input[type="text"]:focus, select:focus, input[type="file"]:focus {
+    border-color: #4b5a6f; /* A slightly lighter color for focus */
+    outline: none;
+}
+
+/* Modal styles */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #192734; /* Card */
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #FFFFFF; /* Primary Text */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal .close:hover {
+    color: #e74c3c; /* A distinct color for close button hover */
+}
+
